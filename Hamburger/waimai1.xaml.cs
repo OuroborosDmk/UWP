@@ -26,5 +26,9 @@ namespace Hamburger
         {
             this.InitializeComponent();
         }
+        public void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Financial));
+        }
     }
 }

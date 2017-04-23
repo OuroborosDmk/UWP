@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid>
+    <Grid  Name="ColorGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Button>1</Button>
     </Grid>
 </Page>

@@ -95,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="zhifu.xaml.cs">
+      <DependentUpon>zhifu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="waimai12.xaml.cs">
       <DependentUpon>waimai12.xaml</DependentUpon>
     </Compile>
@@ -155,8 +158,18 @@
     <None Include="Hamburger_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\1364285443995.jpg" />
+    <Content Include="Assets\330521.jpg" />
+    <Content Include="Assets\1024.jpg" />
+    <Content Include="Assets\562642.jpg" />
+    <Content Include="Assets\632203.jpg" />
     <Content Include="Assets\Financial.png" />
     <Content Include="Assets\Food.png" />
+    <Content Include="Assets\images.jpg" />
+    <Content Include="Assets\mol.png" />
+    <Content Include="Assets\paypal.png" />
+    <Content Include="Assets\美味小厨照烧鸡腿饭.png" />
+    <Content Include="Assets\首尔家的汤饭火腿芝士炒饭.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -171,6 +184,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="zhifu.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="waimai12.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

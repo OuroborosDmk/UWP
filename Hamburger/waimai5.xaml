@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="Hamburger.waimai"
+    x:Class="Hamburger.waimai5"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Hamburger"
@@ -8,6 +8,11 @@
     mc:Ignorable="d">
 
     <Grid  Name="ColorGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-       
+        <Button Name="BackButton"
+                    FontFamily="Segoe MDl2 Assets"
+                    FontSize="36"
+                    Content="&#xE0C4;"
+                    Click="BackButton_Click" 
+                    Margin="0,0,0,672" />
     </Grid>
 </Page>

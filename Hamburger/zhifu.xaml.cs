@@ -20,15 +20,15 @@ namespace Hamburger
     /// <summary>
     /// 可用于自身或导航至 Frame 内部的空白页。
     /// </summary>
-    public sealed partial class waimai8 : Page
+    public sealed partial class zhifu : Page
     {
-        public waimai8()
+        public zhifu()
         {
             this.InitializeComponent();
         }
-        public void BackButton_Click(object sender, RoutedEventArgs e)
+        public void Button_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Financial));
+            Frame.Navigate(typeof(dingdan));
         }
     }
 }

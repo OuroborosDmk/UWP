@@ -7,7 +7,60 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid  Name="ColorGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-       
+    <Grid Name="ColorGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Button Name="BackButton"
+                    FontFamily="Segoe MDl2 Assets"
+                    FontSize="36"
+                    Content="&#xE0C4;"
+                    Click="BackButton_Click" 
+                    Grid.Row="0" Grid.Column="0" Margin="0,0,0,132"/>
+        <Image Grid.Row="0" Grid.Column="0" Margin="0,48,0,0"/>
+        <TextBox Grid.Row="1" Grid.Column="0"/>
+        <Image Grid.Row="2" Grid.Column="0" Margin="10,0,267,0"/>
+        <TextBox Grid.Row="2" Grid.Column="0" Margin="378,0,0,65"/>
+        <Button Grid.Row="2" Grid.Column="0" Width="63" Height="65" Margin="577,115,0,0"/>
+        <TextBox Grid.Row="2" Grid.Column="0" Margin="448,115,63,0"/>
+        <Button Grid.Row="2" Grid.Column="0" Width="70" Height="65" Margin="378,115,0,0"/>
+        <Image Grid.Row="3" Grid.Column="0" Margin="10,0,267,0"/>
+        <TextBox Grid.Row="3" Grid.Column="0" Margin="378,0,0,65"/>
+        <Button Grid.Row="3" Grid.Column="0" Width="63" Height="65" Margin="577,115,0,0"/>
+        <TextBox Grid.Row="3" Grid.Column="0" Margin="448,115,63,0"/>
+        <Button Grid.Row="3" Grid.Column="0" Width="70" Height="65" Margin="378,115,0,0"/>
+        <Image Grid.Row="0" Grid.Column="1" Margin="10,0,267,0"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="378,0,0,65"/>
+        <Button Grid.Row="0" Grid.Column="1" Width="63" Height="65" Margin="577,115,0,0"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Margin="448,115,63,0"/>
+        <Button Grid.Row="0" Grid.Column="1" Width="70" Height="65" Margin="378,115,0,0"/>
+        <Image Grid.Row="1" Grid.Column="1" Margin="10,0,267,0"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="378,0,0,65"/>
+        <Button Grid.Row="1" Grid.Column="1" Width="63" Height="65" Margin="577,115,0,0" VerticalAlignment="Top"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Margin="448,115,63,0"/>
+        <Button Grid.Row="1" Grid.Column="1" Width="70" Height="65" Margin="378,115,0,0"/>
+        <Image Grid.Row="2" Grid.Column="1" Margin="10,0,267,0"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="378,0,0,65"/>
+        <Button Grid.Row="2" Grid.Column="1" Width="63" Height="65" Margin="577,115,0,0"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Margin="448,115,63,0"/>
+        <Button Grid.Row="2" Grid.Column="1" Width="70" Height="65" Margin="378,115,0,0"/>
+        <Image Grid.Row="3" Grid.Column="1" Margin="10,0,267,0" Source="./Assets/首尔家的汤饭火腿芝士炒饭.png" Stretch="Fill" />
+        <TextBlock Grid.Row="3" Grid.Column="1" Margin="378,0,0,65">
+            <Run FontFamily="隶书" FontSize="20">首尔家的汤饭火腿芝士炒饭</Run><LineBreak/>
+            <Run FontFamily="隶书" FontSize="10" >月售:20份</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="15" Foreground="red">现在正在八折优惠中 !!!(￣▽￣)~*</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="18" >只要</Run> <Run FontFamily="隶书" FontSize="24" Foreground="red">￥12 </Run><Run FontFamily="隶书" FontSize="18">就可以了=￣ω￣=</Run><LineBreak/>
+        </TextBlock>
+        <RepeatButton Width="94" Delay="500" Interval="100" Click="Increase_Click" Grid.Column="1" Margin="477,148,0,0" Grid.Row="3">多吃点</RepeatButton>
+        <RepeatButton Width="94" Delay="500" Interval="100" Click="Decrease_Click" Grid.Column="1" Margin="378,148,0,0" Grid.Row="3" Height="32">少吃点</RepeatButton>
+        <TextBlock x:Name="clickTextBlock" Text=" ('▽`)ﾉ :" Grid.Column="1" Margin="378,120,0,28" Grid.Row="3" RenderTransformOrigin="-0.965,-0.562" />
+
     </Grid>
 </Page>

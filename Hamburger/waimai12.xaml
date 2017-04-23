@@ -8,6 +8,11 @@
     mc:Ignorable="d">
 
     <Grid  Name="ColorGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-       
+        <Button Name="BackButton"
+                    FontFamily="Segoe MDl2 Assets"
+                    FontSize="36"
+                    Content="&#xE0C4;"
+                    Click="BackButton_Click" 
+                    Margin="0,0,0,672" />
     </Grid>
 </Page>

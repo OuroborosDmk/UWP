@@ -52,13 +52,13 @@ namespace Hamburger
                 MyFrame.Navigate(typeof(Food));
                 TitleTextBlock.Text = "推荐";
             }
-            else if (Food.IsSelected)
+            else if (dingdan.IsSelected)
             {
                 BackButton.Visibility = Visibility.Visible;
                 MyFrame.Navigate(typeof(dingdan));
                 TitleTextBlock.Text = "订单";
             }
-            else if (Food.IsSelected)
+            else if (person.IsSelected)
             {
                 BackButton.Visibility = Visibility.Visible;
                 MyFrame.Navigate(typeof(person));
@@ -89,13 +89,13 @@ namespace Hamburger
                 MyFrame.Navigate(typeof(Food));
                 TitleTextBlock.Text = "推荐";
             }
-            else if (Food.IsSelected)
+            else if (dingdan.IsSelected)
             {
                 BackButton.Visibility = Visibility.Visible;
                 MyFrame.Navigate(typeof(dingdan));
                 TitleTextBlock.Text = "订单";
             }
-            else if (Food.IsSelected)
+            else if (person.IsSelected)
             {
                 BackButton.Visibility = Visibility.Visible;
                 MyFrame.Navigate(typeof(person));

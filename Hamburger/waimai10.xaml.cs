@@ -26,5 +26,26 @@ namespace Hamburger
         {
             this.InitializeComponent();
         }
+        public void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Financial));
+        }
+        private static int _clicks = 0;
+        private void Increase_Click(object sender, RoutedEventArgs e)
+        {
+            _clicks += 1;
+            clickTextBlock.Text = "('▽`)ﾉ 你点了: " + _clicks +"份饭";
+        }
+
+        private void Decrease_Click(object sender, RoutedEventArgs e)
+        {
+            if (_clicks > 0)
+            {
+                _clicks -= 1;
+                clickTextBlock.Text = "('▽`)ﾉ 你点了: " + _clicks + "份饭";
+            }
+        }
     }
+    
 }
+

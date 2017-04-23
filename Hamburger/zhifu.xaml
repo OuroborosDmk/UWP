@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="Hamburger.zhifu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hamburger"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid>
+        <Image Source="/Assets/562642.jpg"></Image>
+        <Grid Margin="350,100,350,100" Background="white">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="1*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="2*"></RowDefinition>
+                <RowDefinition Height="1*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0"><Run FontSize="44" FontFamily="隶书" FontStyle="Italic">请选择支付方式：(((ﾟДﾟ))) </Run></TextBlock>
+            <Button Grid.Column="0" Width="580" Height="130" Grid.Row="1">
+                <StackPanel Margin="-292,-20,-290,-10">
+                    <Image Height="127" RenderTransformOrigin="0.5,0.5" Source="/Assets/1364285443995.jpg" Stretch="Fill" Margin="283,0,279,0">
+                        <Image.RenderTransform>
+                            <CompositeTransform ScaleY="1"/>
+                        </Image.RenderTransform>
+                    </Image>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="0" Width="580" Height="130" Grid.Row="2">
+                <StackPanel Margin="-290,0,-290,0">
+                    <Image Height="109" RenderTransformOrigin="0.5,0.5" Source="/Assets/paypal.png" Stretch="Fill" Margin="321,0,334,0">
+                        <Image.RenderTransform>
+                            <CompositeTransform ScaleY="1"/>
+                        </Image.RenderTransform>
+                    </Image>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="0" Width="580" Height="130" Grid.Row="3">
+                <StackPanel Margin="-290,-10,-295,-10">
+                    <Image Height="129" RenderTransformOrigin="0.5,0.5" Source="/Assets/images.jpg" Stretch="Fill" Margin="281,0,283,0">
+                        <Image.RenderTransform>
+                            <CompositeTransform ScaleY="1"/>
+                        </Image.RenderTransform>
+                    </Image>
+                </StackPanel>
+            </Button>
+            <Button Grid.Row="4" Width="580" Height="65" Click="Button_Click" Content="返回订单" FontSize="40" FontFamily="隶书"/>
+        </Grid>
+    </Grid>
+
+
+
+</Page>
