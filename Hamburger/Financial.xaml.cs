@@ -54,25 +54,9 @@ namespace Hamburger
         {
             Frame.Navigate(typeof(waimai7));
         }
-        public void button8_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(waimai8));
-        }
-        public void button9_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(waimai9));
-        }
         public void button10_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(waimai10));
-        }
-        public void button11_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(waimai11));
-        }
-        public void button12_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(waimai12));
         }
     }
 }

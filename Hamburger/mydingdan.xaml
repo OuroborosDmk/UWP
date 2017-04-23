@@ -1,0 +1,22 @@
+﻿<Page
+    x:Class="Hamburger.mydingdan"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hamburger"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Grid>
+        <Image Source="/Assets/632203.jpg"></Image>
+        <Grid Margin="300,50,300,50">
+            <Image Source="/Assets/330521.jpg" Opacity="0.6"></Image>
+            <Button Width="112" Height="620" Margin="568,0,0,0" Click="Button_Click">
+                <StackPanel Width="95" Height="620">
+                </StackPanel>
+            </Button>
+        </Grid>
+    </Grid>
+
+
+
+</Page>

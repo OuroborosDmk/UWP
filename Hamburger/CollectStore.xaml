@@ -1,0 +1,74 @@
+﻿<Page
+    x:Class="Hamburger.CollectStore"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Hamburger"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="27*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="我的收藏" FontSize="32" TextWrapping="Wrap" Foreground="#FFDC1111"  SelectionHighlightColor="Green" FontWeight="Bold" />
+        <!--  <ItemsControl Grid.Row="1" x:Name="favoriteItems">
+            <ItemsControl.ItemContainerTransitions>
+                <TransitionCollection>
+                    <EntranceThemeTransition/>
+                </TransitionCollection>
+            </ItemsControl.ItemContainerTransitions>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapGrid />
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+            <ItemsControl.Items>             
+        
+        
+        
+         </ItemsControl.Items>
+        </ItemsControl>
+        -->
+
+
+        <!--  删除移位-->
+        <Button Grid.Row="1" Content="Remove" Click="RemoveButton_Click" Margin="230,425,0,0" />
+        <ItemsControl Grid.Row="1" x:Name="rectangleItems">
+            <ItemsControl.ItemContainerTransitions>
+                <TransitionCollection>
+
+                    <!-- Without this, there would be no animation when items 
+                 are removed. -->
+                    <RepositionThemeTransition/>
+                </TransitionCollection>
+            </ItemsControl.ItemContainerTransitions>
+            <ItemsControl.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapGrid Height="400"/>
+                </ItemsPanelTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <!-- All these rectangles are just to demonstrate how the items
+         in the grid re-flow into position when one of the child items
+         are removed. -->
+            <ItemsControl.Items>
+                <Image Source="Assets/Eat/z2.jpg" Width="100" Height="100" Margin="10"/>
+
+                <Rectangle Fill="Red" Width="100" Height="100" Margin="10"/>
+                <Rectangle Fill="Red" Width="100" Height="100" Margin="10"/>
+                <Rectangle Fill="Red" Width="100" Height="100" Margin="10"/>
+                <Image Source="Assets/Eat/x2.jpg" Width="100" Height="100" Margin="10,10,10,0" VerticalAlignment="Top" d:LayoutOverrides="Height"/>
+                <TextBlock Width="100" Height="100" Margin="10"  Text="元宵⛄" FontSize="32" TextWrapping="Wrap" Foreground="#FFDC1111"  SelectionHighlightColor="Green" FontWeight="Bold"/>
+                <TextBlock Width="100" Height="100" Margin="10"  Text="☂端午" FontSize="30" TextWrapping="Wrap" Foreground="#FF4B9B39"  SelectionHighlightColor="Green"  />
+                <Rectangle Fill="Red" Width="100" Height="100" Margin="10"/>
+                <Image Source="Assets/Eat/w2.jpg" Width="100" Height="100" Margin="10"/>
+            </ItemsControl.Items>
+        </ItemsControl>
+
+
+
+    </Grid>
+</Page>

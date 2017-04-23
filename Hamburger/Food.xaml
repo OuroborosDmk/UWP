@@ -5,116 +5,12 @@
     xmlns:local="using:Hamburger"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
 
-    <Grid Name="Button" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Button Name="button1" Content="Button" HorizontalAlignment="Left" Width="427" Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Height="180">
-            
-        </Button>
-        <Button Name="button2" Content="Button" HorizontalAlignment="Left" Width="427" Grid.Row="3" Grid.Column="1" VerticalAlignment="Top" Height="180">
-            
-        </Button>
-        <Button Name="button3" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="3" Grid.Column="2" VerticalAlignment="Top" Height="180">
-            
-        </Button>
-        <Button Name="button4" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" Height="180">
-           
-        </Button>
-        <Button Name="button5" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" Height="180">
-            
-        </Button>
-        <Button Name="button6" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="2" Grid.Column="2" VerticalAlignment="Top" Height="180">
-            
-        </Button>
-        <Button Name="button7" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" Height="180">
-            
-        </Button>
-        <Button Name="button8" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Height="180">
-            
-        </Button>
-        <Button Name="button9" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="1" Grid.Column="2" VerticalAlignment="Top" Height="180">
-           
-        </Button>
-        <Button Name="button10" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" Height="180">
-            
-        </Button>
-        <Button Name="button11" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" Height="180">
-            
-        </Button>
-        <Button Name="button12" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="0" Grid.Column="2" VerticalAlignment="Top" Height="180">
-            
-        </Button>
-        <VisualStateManager.VisualStateGroups>
-            <VisualStateGroup x:Name="VisualStateGroup">
-                <VisualState x:Name="VisualStatePhone">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="0"/>
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="button1.Background" Value="yellow" />
-                        <Setter Target="button4.Background" Value="yellow" />
-                        <Setter Target="button7.Background" Value="yellow" />
-                        <Setter Target="button10.Background" Value="yellow" />
-                        <Setter Target="button2.Background" Value="green" />
-                        <Setter Target="button5.Background" Value="green" />
-                        <Setter Target="button8.Background" Value="green" />
-                        <Setter Target="button11.Background" Value="green" />
-                        <Setter Target="button3.Background" Value="black" />
-                        <Setter Target="button6.Background" Value="black" />
-                        <Setter Target="button9.Background" Value="black" />
-                        <Setter Target="button12.Background" Value="black" />
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:Name="VisualStateTablet">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="600" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="button1.Background" Value="blue" />
-                        <Setter Target="button4.Background" Value="blue" />
-                        <Setter Target="button7.Background" Value="blue" />
-                        <Setter Target="button10.Background" Value="blue" />
-                        <Setter Target="button2.Background" Value="yellow" />
-                        <Setter Target="button5.Background" Value="yellow" />
-                        <Setter Target="button8.Background" Value="yellow" />
-                        <Setter Target="button11.Background" Value="yellow" />
-                        <Setter Target="button3.Background" Value="green" />
-                        <Setter Target="button6.Background" Value="green" />
-                        <Setter Target="button9.Background" Value="green" />
-                        <Setter Target="button12.Background" Value="green" />
-                    </VisualState.Setters>
-                </VisualState>
-                <VisualState x:Name="VisualStateDesktop">
-                    <VisualState.StateTriggers>
-                        <AdaptiveTrigger MinWindowWidth="800" />
-                    </VisualState.StateTriggers>
-                    <VisualState.Setters>
-                        <Setter Target="button1.Background" Value="blue" />
-                        <Setter Target="button4.Background" Value="blue" />
-                        <Setter Target="button7.Background" Value="blue" />
-                        <Setter Target="button10.Background" Value="blue" />
-                        <Setter Target="button2.Background" Value="red" />
-                        <Setter Target="button5.Background" Value="red" />
-                        <Setter Target="button8.Background" Value="red" />
-                        <Setter Target="button11.Background" Value="red" />
-                        <Setter Target="button3.Background" Value="yellow" />
-                        <Setter Target="button6.Background" Value="yellow" />
-                        <Setter Target="button9.Background" Value="yellow" />
-                        <Setter Target="button12.Background" Value="yellow" />
-                    </VisualState.Setters>
-                </VisualState>
-            </VisualStateGroup>
-        </VisualStateManager.VisualStateGroups>
+    <Grid Name="MainPanel" Background="White" Margin="5" Height="275"  Width="200" >
+      
     </Grid>
+
 </Page>

@@ -26,5 +26,42 @@ namespace Hamburger
         {
             this.InitializeComponent();
         }
+        private void CollectStore_Click(object sender, RoutedEventArgs e)
+        {
+            CollectStore.Visibility = Visibility.Collapsed;
+            MyFrame.Navigate(typeof(CollectStore));
+
+        }
+
+
+
+        private void WoDeDingDanButton_Click(object sender, RoutedEventArgs e)
+        {
+            WoDeDingDan.Visibility = Visibility.Collapsed;
+            MyFrame.Navigate(typeof(WoDeDingDan));
+
+        }
+
+        private void Music_Click(object sender, RoutedEventArgs e)
+        {
+            Music.Visibility = Visibility.Collapsed;
+            MyFrame.Navigate(typeof(Music));
+
+        }
+
+
+        private void AddressButton_Click(object sender, RoutedEventArgs e)
+        {
+            AddressButton.Visibility = Visibility.Collapsed;
+            MyFrame.Navigate(typeof(Address));
+
+        }
+
+        private void QuestionButton_Click(object sender, RoutedEventArgs e)
+        {
+            QuestionButton.Visibility = Visibility.Collapsed;
+            MyFrame.Navigate(typeof(QuestionPage));
+
+        }
     }
 }

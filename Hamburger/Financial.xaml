@@ -7,114 +7,108 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Name="ColorGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-            <RowDefinition></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-            <ColumnDefinition></ColumnDefinition>
-        </Grid.ColumnDefinitions>
-        <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Width="427" Grid.Row="3" Grid.Column="0" VerticalAlignment="Top" Height="180" Click="button1_Click">
-            <Button.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="red" Offset="0"></GradientStop>
-                    <GradientStop Color="black" Offset="0.6"></GradientStop>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button2" Content="Button" HorizontalAlignment="Left" Width="427" Grid.Row="3" Grid.Column="1" VerticalAlignment="Top" Height="180" Click="button2_Click">
-            <Button.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="red" Offset="1"></GradientStop>
-                    <GradientStop Color="black" Offset="0.5"></GradientStop>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="3" Grid.Column="2" VerticalAlignment="Top" Height="180" Click="button3_Click">
-            <Button.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="red" Offset="0"></GradientStop>
-                    <GradientStop Color="black" Offset="0.7"></GradientStop>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button4" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="2" Grid.Column="0" VerticalAlignment="Top" Height="180" Click="button4_Click">
-            <Button.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="red" Offset="1"></GradientStop>
-                    <GradientStop Color="black" Offset="0.7"></GradientStop>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button5" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top" Height="180" Click="button5_Click">
-            <Button.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="red" Offset="0"></GradientStop>
-                    <GradientStop Color="black" Offset="0.8"></GradientStop>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button6" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="2" Grid.Column="2" VerticalAlignment="Top" Height="180" Click="button6_Click">
-            <Button.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="red" Offset="1"></GradientStop>
-                    <GradientStop Color="black" Offset="0.7"></GradientStop>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button7" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="1" Grid.Column="0" VerticalAlignment="Top" Height="180" Click="button7_Click">
-            <Button.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="black" Offset="0.05"></GradientStop>
-                    <GradientStop Color="red" Offset="0.5"></GradientStop>
-                    <GradientStop Color="black" Offset="0.9"></GradientStop>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button8" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="1" Grid.Column="1" VerticalAlignment="Top" Height="180" Click="button8_Click">
-            <Button.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="black" Offset="0.8"></GradientStop>
-                    <GradientStop Color="red" Offset="1"></GradientStop>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button9" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="1" Grid.Column="2" VerticalAlignment="Top" Height="180" Click="button9_Click">
-            <Button.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="red" Offset="0"></GradientStop>
-                    <GradientStop Color="black" Offset="0.95"></GradientStop>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button10" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" Height="180" Click="button10_Click">
-            <Button.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="red" Offset="0"></GradientStop>
-                    <GradientStop Color="black" Offset="0.25"></GradientStop>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button11" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="0" Grid.Column="1" VerticalAlignment="Top" Height="180" Click="button11_Click">
-            <Button.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="red" Offset="1"></GradientStop>
-                    <GradientStop Color="black" Offset="0.1"></GradientStop>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
-        <Button x:Name="button12" Content="Button" HorizontalAlignment="Left" Width="426" Grid.Row="0" Grid.Column="2" VerticalAlignment="Top" Height="180" Click="button12_Click">
-            <Button.Background>
-                <LinearGradientBrush>
-                    <GradientStop Color="red" Offset="0"></GradientStop>
-                    <GradientStop Color="black" Offset="0.2"></GradientStop>
-                </LinearGradientBrush>
-            </Button.Background>
-        </Button>
+    <Grid Name="ColorGrid">
+        <Image Source="/Assets/567232.jpg"></Image>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Grid.Row="0" Margin="26,51,0,39" Height="270" Width="253">
+                <StackPanel Margin="-126,-114,-122,-114">
+                    <Ellipse Height="196">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="/Assets/亿家好饭台湾大鸡排饭.png" Opacity="0.8"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <TextBlock Text="亿家好饭"  Foreground="black"
+                             HorizontalAlignment="Center" FontFamily="隶书" FontSize="40"/>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="0" Margin="26,51,0,39" Height="270" Width="253">
+                <StackPanel Margin="-126,-114,-122,-114">
+                    <Ellipse Height="196">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="/Assets/南京老鸭粉.png" Opacity="0.8"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <TextBlock Text="南京老鸭粉"  Foreground="black"
+                             HorizontalAlignment="Center" FontFamily="隶书" FontSize="40"/>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="2" Grid.Row="0" Margin="26,51,0,39" Height="270" Width="253">
+                <StackPanel Margin="-126,-114,-122,-114">
+                    <Ellipse Height="196">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="/Assets/朝天椒麻辣拌.png" Opacity="0.8"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <TextBlock Text="朝天椒麻辣拌"  Foreground="black"
+                             HorizontalAlignment="Center" FontFamily="隶书" FontSize="40"/>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="3" Grid.Row="0" Margin="26,51,0,39" Height="270" Width="253">
+                <StackPanel Margin="-126,-114,-122,-114">
+                    <Ellipse Height="196">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="/Assets/川渝食尚烧茄子饭.png" Opacity="0.8"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <TextBlock Text="川渝食尚"  Foreground="black"
+                             HorizontalAlignment="Center" FontFamily="隶书" FontSize="40"/>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="0" Grid.Row="1" Margin="26,51,0,39" Height="270" Width="253">
+                <StackPanel Margin="-126,-114,-122,-114">
+                    <Ellipse Height="196">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="/Assets/美味小厨照烧鸡腿饭.png" Opacity="0.8"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <TextBlock Text="美味小厨"  Foreground="black"
+                             HorizontalAlignment="Center" FontFamily="隶书" FontSize="40"/>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="1" Grid.Row="1" Margin="26,51,0,39" Height="270" Width="253">
+                <StackPanel Margin="-126,-114,-122,-114">
+                    <Ellipse Height="196">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="/Assets/琦健快餐蛋炒饭.png" Opacity="0.8"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <TextBlock Text="琦健快餐"  Foreground="black"
+                             HorizontalAlignment="Center" FontFamily="隶书" FontSize="40"/>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="2" Grid.Row="1" Margin="26,51,0,39" Height="270" Width="253">
+                <StackPanel Margin="-126,-114,-122,-114">
+                    <Ellipse Height="196">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="/Assets/首尔家的汤饭.png" Opacity="0.8"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <TextBlock Text="首尔家汤饭"  Foreground="black"
+                             HorizontalAlignment="Center" FontFamily="隶书" FontSize="40"/>
+                </StackPanel>
+            </Button>
+            <Button Grid.Column="3" Grid.Row="1" Margin="26,51,0,39" Height="270" Width="253">
+                <StackPanel Margin="-126,-114,-122,-114">
+                    <Ellipse Height="196">
+                        <Ellipse.Fill>
+                            <ImageBrush ImageSource="/Assets/晓哲麻辣拌.png" Opacity="0.8"/>
+                        </Ellipse.Fill>
+                    </Ellipse>
+                    <TextBlock Text="晓哲麻辣拌"  Foreground="black"
+                             HorizontalAlignment="Center" FontFamily="隶书" FontSize="40"/>
+                </StackPanel>
+            </Button>
+
+        </Grid>
     </Grid>
 </Page>

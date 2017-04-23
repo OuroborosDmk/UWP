@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -22,10 +23,11 @@ namespace Hamburger
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        
         public MainPage()
         {
             this.InitializeComponent();
-
+           
             MyFrame.Navigate(typeof(Financial));
             TitleTextBlock.Text = "Financial";
 
@@ -55,7 +57,7 @@ namespace Hamburger
             else if (dingdan.IsSelected)
             {
                 BackButton.Visibility = Visibility.Visible;
-                MyFrame.Navigate(typeof(dingdan));
+                MyFrame.Navigate(typeof(mydingdan));
                 TitleTextBlock.Text = "订单";
             }
             else if (person.IsSelected)
@@ -92,7 +94,7 @@ namespace Hamburger
             else if (dingdan.IsSelected)
             {
                 BackButton.Visibility = Visibility.Visible;
-                MyFrame.Navigate(typeof(dingdan));
+                MyFrame.Navigate(typeof(mydingdan));
                 TitleTextBlock.Text = "订单";
             }
             else if (person.IsSelected)

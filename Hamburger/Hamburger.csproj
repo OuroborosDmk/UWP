@@ -92,26 +92,33 @@
     <None Include="project.json" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Address.xaml.cs">
+      <DependentUpon>Address.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CollectStore.xaml.cs">
+      <DependentUpon>CollectStore.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\NewsItem.cs" />
+    <Compile Include="Music.xaml.cs">
+      <DependentUpon>Music.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyPingJia.xaml.cs">
+      <DependentUpon>MyPingJia.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="QuestionPage.xaml.cs">
+      <DependentUpon>QuestionPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WoDeDingDan.xaml.cs">
+      <DependentUpon>WoDeDingDan.xaml</DependentUpon>
     </Compile>
     <Compile Include="zhifu.xaml.cs">
       <DependentUpon>zhifu.xaml</DependentUpon>
     </Compile>
-    <Compile Include="waimai12.xaml.cs">
-      <DependentUpon>waimai12.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="waimai11.xaml.cs">
-      <DependentUpon>waimai11.xaml</DependentUpon>
-    </Compile>
     <Compile Include="waimai10.xaml.cs">
       <DependentUpon>waimai10.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="waimai9.xaml.cs">
-      <DependentUpon>waimai9.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="waimai8.xaml.cs">
-      <DependentUpon>waimai8.xaml</DependentUpon>
     </Compile>
     <Compile Include="waimai7.xaml.cs">
       <DependentUpon>waimai7.xaml</DependentUpon>
@@ -137,8 +144,8 @@
     <Compile Include="person.xaml.cs">
       <DependentUpon>person.xaml</DependentUpon>
     </Compile>
-    <Compile Include="dingdan.xaml.cs">
-      <DependentUpon>dingdan.xaml</DependentUpon>
+    <Compile Include="mydingdan.xaml.cs">
+      <DependentUpon>mydingdan.xaml</DependentUpon>
     </Compile>
     <Compile Include="Financial.xaml.cs">
       <DependentUpon>Financial.xaml</DependentUpon>
@@ -162,14 +169,21 @@
     <Content Include="Assets\330521.jpg" />
     <Content Include="Assets\1024.jpg" />
     <Content Include="Assets\562642.jpg" />
+    <Content Include="Assets\567232.jpg" />
     <Content Include="Assets\632203.jpg" />
     <Content Include="Assets\Financial.png" />
     <Content Include="Assets\Food.png" />
     <Content Include="Assets\images.jpg" />
     <Content Include="Assets\mol.png" />
     <Content Include="Assets\paypal.png" />
+    <Content Include="Assets\亿家好饭台湾大鸡排饭.png" />
+    <Content Include="Assets\南京老鸭粉.png" />
+    <Content Include="Assets\川渝食尚烧茄子饭.png" />
+    <Content Include="Assets\晓哲麻辣拌.png" />
+    <Content Include="Assets\朝天椒麻辣拌.png" />
+    <Content Include="Assets\琦健快餐蛋炒饭.png" />
     <Content Include="Assets\美味小厨照烧鸡腿饭.png" />
-    <Content Include="Assets\首尔家的汤饭火腿芝士炒饭.png" />
+    <Content Include="Assets\首尔家的汤饭.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -184,27 +198,35 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Address.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="CollectStore.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Music.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MyPingJia.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="QuestionPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="WoDeDingDan.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="zhifu.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="waimai12.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="waimai11.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
     <Page Include="waimai10.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="waimai9.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Include="waimai8.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -240,7 +262,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="dingdan.xaml">
+    <Page Include="mydingdan.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
