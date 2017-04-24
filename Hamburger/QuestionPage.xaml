@@ -7,10 +7,11 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid>
+        
+        
         <WebView x:Name="webView1" Source="https://www.baidu.com"/>
-        
-        
+        <Button Width="176" Height="59" Click="Button_Click" Content="Return" FontSize="40" FontFamily="隶书" Margin="0,661,0,0"/>
+
     </Grid>
 </Page>

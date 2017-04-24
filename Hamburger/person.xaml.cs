@@ -29,7 +29,7 @@ namespace Hamburger
         private void CollectStore_Click(object sender, RoutedEventArgs e)
         {
             CollectStore.Visibility = Visibility.Collapsed;
-            MyFrame.Navigate(typeof(CollectStore));
+            Frame.Navigate(typeof(CollectStore));
 
         }
 
@@ -38,14 +38,14 @@ namespace Hamburger
         private void WoDeDingDanButton_Click(object sender, RoutedEventArgs e)
         {
             WoDeDingDan.Visibility = Visibility.Collapsed;
-            MyFrame.Navigate(typeof(WoDeDingDan));
+            Frame.Navigate(typeof(mydingdan));
 
         }
 
         private void Music_Click(object sender, RoutedEventArgs e)
         {
             Music.Visibility = Visibility.Collapsed;
-            MyFrame.Navigate(typeof(Music));
+            Frame.Navigate(typeof(Music));
 
         }
 
@@ -53,14 +53,14 @@ namespace Hamburger
         private void AddressButton_Click(object sender, RoutedEventArgs e)
         {
             AddressButton.Visibility = Visibility.Collapsed;
-            MyFrame.Navigate(typeof(Address));
+            Frame.Navigate(typeof(Address));
 
         }
 
         private void QuestionButton_Click(object sender, RoutedEventArgs e)
         {
             QuestionButton.Visibility = Visibility.Collapsed;
-            MyFrame.Navigate(typeof(QuestionPage));
+            Frame.Navigate(typeof(QuestionPage));
 
         }
     }

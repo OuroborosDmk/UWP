@@ -19,7 +19,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0"><Run FontSize="44" FontFamily="隶书" FontStyle="Italic">请选择支付方式：(((ﾟДﾟ))) </Run></TextBlock>
+            <TextBlock Grid.Row="0"><Run FontSize="46" FontFamily="微软雅黑" FontStyle="Italic">请选择支付方式：(((ﾟДﾟ))) </Run></TextBlock>
             <Button Grid.Column="0" Width="580" Height="130" Grid.Row="1">
                 <StackPanel Margin="-292,-20,-290,-10">
                     <Image Height="127" RenderTransformOrigin="0.5,0.5" Source="/Assets/1364285443995.jpg" Stretch="Fill" Margin="283,0,279,0">

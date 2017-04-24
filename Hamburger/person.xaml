@@ -7,167 +7,29 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    
-        <!--xmlns:UI="using:Microsoft.Advertising.WinRT.UI"-->
+
+    <!--xmlns:UI="using:Microsoft.Advertising.WinRT.UI"-->
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
-        <Frame Name="MyFrame">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height=" auto"/>
-                    <RowDefinition Height=" auto"/>
-                    <RowDefinition Height=" auto"/>
-                    <RowDefinition Height="5*"/>
-
-                </Grid.RowDefinitions>
-
-
-                <Grid Grid.Row="0">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                    </Grid.ColumnDefinitions>
-                    <Image Grid.Row="0" Grid.Column="0" Source="Assets/Eat/w1.png" VerticalAlignment="Top"
-                                  Stretch="Fill"/>
-                    <Image Grid.Row="0" Grid.Column="1" Source="Assets/Eat/x1.png" VerticalAlignment="Top"
-                                  Stretch="Fill"/>
-                    <Image Grid.Column="2" Source="Assets/Eat/z1.png" VerticalAlignment="Top"
-                                  Stretch="Fill"  />
-                </Grid>
-                <!--   <UI:AdControl ApplicationId="3f83fe91-d6be-434d-a0ae-7351c5a997f1"
-                           AdUnitId="10865270"
-                           HorizontalAlignment="Left"
-                           Height="250"
-                           VerticalAlignment="Top"
-                           Width="300"/>-->
-
-                <Grid  Background="MistyRose"
-                               Grid.Row="1" Margin="0,0,0,0.333" d:LayoutOverrides="TopPosition, BottomPosition" HorizontalAlignment="Right" Width="304">
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="5*"/>
-                        <RowDefinition Height="19*"/>
-                    </Grid.RowDefinitions>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="1*" />
-                        <ColumnDefinition Width="1.2*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                        <ColumnDefinition Width="1*"/>
-                    </Grid.ColumnDefinitions>
-                    <TextBlock  Grid.Column="0" FontFamily="Segoe MDL2 Assets" FontSize="47" Text="&#xE181;"/>
-                    <TextBlock Grid.Column="1" Text="Bramnen" />
-                    <Button  Grid.Column="2" Name="CollectStore"       
-                                RelativePanel.AlignLeftWithPanel ="True" 
-                                      FontFamily="Segoe MDL2 Assets" 
-                                      FontSize="39" 
-                                      Content="&#xE006;" 
-                     Click="CollectStore_Click" VerticalAlignment="Stretch" d:LayoutOverrides="Height, TopMargin, BottomMargin, TopPosition, BottomPosition" >
-                        <Button.Transitions>
-                            <TransitionCollection>
-                                <EntranceThemeTransition/>
-                            </TransitionCollection>
-                        </Button.Transitions>
-                    </Button>
-
-                    <Button  Grid.Column="3" Name="WoDeDingDan"  
-                                      RelativePanel.AlignLeftWithPanel ="True" 
-                                      FontFamily="Segoe MDL2 Assets" 
-                                      FontSize="39" 
-                                      Content="&#xE7B8;" 
-                     Click="WoDeDingDanButton_Click" VerticalAlignment="Stretch" d:LayoutOverrides="Height, TopMargin, BottomMargin, TopPosition, BottomPosition" >
-                        <Button.Transitions>
-                            <TransitionCollection>
-                                <EntranceThemeTransition/>
-                            </TransitionCollection>
-                        </Button.Transitions>
-                    </Button>
-                    <Button  Grid.Column="4" Name="Music"  
-                                      RelativePanel.AlignLeftWithPanel ="True" 
-                                      FontFamily="Segoe MDL2 Assets" 
-                                      FontSize="39" 
-                                      Content="&#xE768;" 
-                     Click="Music_Click" VerticalAlignment="Stretch" d:LayoutOverrides="Height, TopMargin, BottomMargin, TopPosition, BottomPosition">
-                        <Button.Transitions>
-                            <TransitionCollection>
-                                <EntranceThemeTransition/>
-                            </TransitionCollection>
-                        </Button.Transitions>
-                    </Button>
-                </Grid>
-
-                <Grid>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height=" auto"/>
-                        <RowDefinition Height=" auto"/>
-                        <RowDefinition Height="5*"/>
-                    </Grid.RowDefinitions>
-                </Grid>
-
-                <Grid Grid.Row="2">
-                    <Grid.ColumnDefinitions >
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-                        <ColumnDefinition />
-
-                    </Grid.ColumnDefinitions>
-                </Grid>
-
-                <ItemsControl Grid.Row="3" x:Name="rectangleItems">
-                    <ItemsControl.ItemContainerTransitions>
-                        <TransitionCollection>
-                            <EntranceThemeTransition/>
-                        </TransitionCollection>
-                    </ItemsControl.ItemContainerTransitions>
-                    <ItemsControl.ItemsPanel>
-                        <ItemsPanelTemplate>
-                            <!--<WrapGrid Height="400"/>-->
-                        </ItemsPanelTemplate>
-                    </ItemsControl.ItemsPanel>
-                    <ItemsControl.Items>
-
-                        <Grid Grid.Row="3">
-                            <!-- <Grid.Transitions>
-                               <TransitionCollection>
-                                <EntranceThemeTransition/>
-                               </TransitionCollection>
-                            </Grid.Transitions>-->
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height=" 1*"/>
-                                <RowDefinition Height=" 1*"/>
-                                <RowDefinition Height=" 1*"/>
-                                <RowDefinition Height=" 1*"/>
-                                <RowDefinition Height=" 1*"/>
-                                <RowDefinition Height="3*"/>
-                            </Grid.RowDefinitions>
-                            <TextBlock  Grid.Row="0" Text="我的地址" FontFamily="宋体"  Margin="4,8,147,0"/>
-                            <Button Grid.Row="0" Name="AddressButton" 
-                                     FontFamily="Segoe MDL2 Assets" 
-                                     Content="&#xE013;" HorizontalAlignment="Right" VerticalAlignment="Stretch" 
-                                    d:LayoutOverrides="Height, TopPosition, BottomPosition" 
-                                    Click="AddressButton_Click"/>
-
-                            <TextBlock  Grid.Row="1" Text="我的记录" FontFamily="宋体"  Margin="4,8,147,0"/>
-                            <Button Grid.Row="1" Name="EvaluateButton" 
-                                     FontFamily="Segoe MDL2 Assets"  
-                                     Content="&#xE013;" HorizontalAlignment="Right" VerticalAlignment="Stretch" d:LayoutOverrides="Height, TopPosition, BottomPosition" />
-
-
-
-                            <TextBlock  Grid.Row="2" Text="问题查询" FontFamily="宋体"  Margin="4,8,147,0"/>
-                            <Button Grid.Row="2" Name="QuestionButton" 
-                                     FontFamily="Segoe MDL2 Assets" 
-                                    Click="QuestionButton_Click"
-                                     Content="&#xE013;" HorizontalAlignment="Right" VerticalAlignment="Stretch" d:LayoutOverrides="Height, TopPosition, BottomPosition" />
-                        </Grid>
-                    </ItemsControl.Items>
-                </ItemsControl>
-            </Grid>
-        </Frame>
+        <Image Source="/Assets/9.png" Stretch="Fill"></Image>
+        <Grid Margin="100,100,100,100">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Row="0" Margin="0,0,711,0" ><Run FontFamily="隶书" FontSize="50" Foreground="white">这里是个人中心:</Run><LineBreak/> <Run  FontFamily="隶书" FontSize="40" Foreground="white">ヽ(ﾟДﾟ)ﾉ</Run></TextBlock>
+            <Button Name="AddressButton" Click="AddressButton_Click" Width="566" Height="104" Grid.Row="0" Margin="514,0,0,0" Content="我的位置" Foreground="white" FontSize="40" FontFamily="隶书"></Button>
+            <Button Name="CollectStore" Click="CollectStore_Click" Width="566" Height="104" Grid.Row="1" Margin="374,0,0,0" Content="我的收藏" Foreground="white" FontSize="40" FontFamily="隶书"></Button>
+            <Button Name="Music" Click="Music_Click" Width="566" Height="104" Grid.Row="2" Margin="248,0,0,0" Content="?Music?" Foreground="white" FontSize="40" FontFamily="隶书"></Button>
+            <Button Name="QuestionButton" Click="QuestionButton_Click" Width="566" Height="104" Grid.Row="3" Margin="131,0,0,0" Content="？查询？" Foreground="white" FontSize="40" FontFamily="隶书"></Button>
+            <Button Name="WoDeDingDan" Click="WoDeDingDanButton_Click" Width="566" Height="104" Grid.Row="4" Content="我的订单" Foreground="white" FontSize="40" FontFamily="隶书"></Button>
+        </Grid>
 
 
     </Grid>

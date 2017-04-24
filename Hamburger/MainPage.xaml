@@ -13,7 +13,7 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
-        <RelativePanel Background="pink">
+        <RelativePanel Background="orange">
             <Button Name="HamburgerButton"
                     RelativePanel.AlignLeftWithPanel="True"
                     FontFamily="Segoe MDL2 Assets"
@@ -55,7 +55,7 @@
                    CompactPaneLength="56">
             <SplitView.Pane>
                 <ListBox SelectionMode="Single"
-                          Background="BlueViolet"
+                          Background="yellow"
                          SelectionChanged="ListBox_SelectionChanged">
                     <ListBoxItem Name="Financial">
                         <StackPanel Orientation="Horizontal">

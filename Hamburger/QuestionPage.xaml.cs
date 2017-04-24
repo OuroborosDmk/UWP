@@ -26,5 +26,9 @@ namespace Hamburger
         {
             this.InitializeComponent();
         }
+        public void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(person));
+        }
     }
 }

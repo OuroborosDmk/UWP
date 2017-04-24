@@ -8,11 +8,95 @@
     mc:Ignorable="d">
 
     <Grid  Name="ColorGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Source="/Assets/47393.jpg" Stretch="Fill" Grid.RowSpan="4" Grid.ColumnSpan="2"/>
         <Button Name="BackButton"
                     FontFamily="Segoe MDl2 Assets"
                     FontSize="36"
                     Content="&#xE0C4;"
                     Click="BackButton_Click" 
-                    Margin="0,0,0,672" />
+                    Grid.Row="0" Grid.Column="0" Margin="0,0,0,132" Foreground="white"/>
+        <TextBlock Grid.Row="0" Grid.Column="0" Margin="10,53,336,28" FontFamily="隶书">
+            <Run FontSize="45" Foreground="white">首尔家汤饭</Run><LineBreak/>
+            <Run Foreground="white">商家配送|平均30分钟|免配送费</Run>
+        </TextBlock>
+        <Image Grid.Row="0" Grid.Column="0" Margin="352,0,0,0" Source="/Assets/亿家好饭台湾大鸡排饭.png" Stretch="Fill" Opacity="0.7"/>
+        <TextBlock Grid.Row="1" Grid.Column="0" FontFamily="隶书">
+            <Run Foreground="white">满10减1，满15减2，满30减3，满45减5</Run><LineBreak/><LineBreak/>
+            <Run Foreground="white">加1元换购椰泰果肉椰子汁</Run><LineBreak/><LineBreak/>
+            <Run Foreground="white">新用户下单立减19.0元（不与其它活动同享)</Run><LineBreak/><LineBreak/>
+            <Run Foreground="white">7.5折美食</Run><LineBreak/><LineBreak/>
+            <Run Foreground="white">7折品质赠饮套餐</Run><LineBreak/>
+            <Run Foreground="white">7折品质赠饮套餐</Run><LineBreak/>
+        </TextBlock>
+        <Image Grid.Row="2" Grid.Column="0" Margin="0,0,267,0" Source="./Assets/首尔家的汤饭.png" Stretch="Fill" Opacity="0.7"/>
+        <TextBlock Grid.Row="2" Grid.Column="0" Margin="378,0,0,65">
+            <Run FontFamily="隶书" FontSize="20" Foreground="white">首尔家的汤饭火腿芝士炒饭</Run><LineBreak/>
+            <Run FontFamily="隶书" FontSize="10" Foreground="white">月售:20份</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="15" Foreground="yellow">现在正在八折优惠中 !!!(￣▽￣)~*</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="18" Foreground="white">只要</Run> <Run FontFamily="隶书" FontSize="24" Foreground="yellow">￥12 </Run><Run FontFamily="隶书" FontSize="18" Foreground="white">就可以了=￣ω￣=</Run><LineBreak/>
+        </TextBlock>
+        <RepeatButton Width="114" Delay="500" Interval="100" Click="Increase_Click" Grid.Column="0" Margin="526,148,0,0" Grid.Row="2" Foreground="white">多吃点</RepeatButton>
+        <RepeatButton Width="114" Delay="500" Interval="100" Click="Decrease_Click" Grid.Column="0" Margin="373,148,0,0" Grid.Row="2" Height="32" Foreground="white">少吃点</RepeatButton>
+        <TextBlock Foreground="white" x:Name="clickTextBlock" Text=" ('▽`)ﾉ :" Grid.Column="0" Margin="378,120,0,28" Grid.Row="2" RenderTransformOrigin="-0.965,-0.562" />
+        <Image Grid.Row="3" Grid.Column="0" Margin="0,0,267,0" Source="./Assets/首尔家的汤饭.png" Stretch="Fill" Opacity="0.7"/>
+        <TextBlock Grid.Row="3" Grid.Column="0" Margin="378,0,0,65">
+            <Run FontFamily="隶书" FontSize="20" Foreground="white">首尔家的汤饭火腿芝士炒饭</Run><LineBreak/>
+            <Run FontFamily="隶书" FontSize="10" Foreground="white">月售:20份</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="15" Foreground="yellow">现在正在八折优惠中 !!!(￣▽￣)~*</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="18" Foreground="white">只要</Run> <Run FontFamily="隶书" FontSize="24" Foreground="yellow">￥12 </Run><Run FontFamily="隶书" FontSize="18" Foreground="white">就可以了=￣ω￣=</Run><LineBreak/>
+        </TextBlock>
+        <RepeatButton Width="114" Delay="500" Interval="100" Click="Increase_Click2" Grid.Column="0" Margin="526,148,0,0" Grid.Row="3" Foreground="white">多吃点</RepeatButton>
+        <RepeatButton Width="114" Delay="500" Interval="100" Click="Decrease_Click2" Grid.Column="0" Margin="373,148,0,0" Grid.Row="3" Height="32" Foreground="white">少吃点</RepeatButton>
+        <TextBlock x:Name="clickTextBlock2" Text=" ('▽`)ﾉ :" Grid.Column="0" Margin="378,120,0,28" Grid.Row="3" RenderTransformOrigin="-0.965,-0.562" Foreground="white"/>
+        <Image Grid.Row="0" Grid.Column="1" Margin="0,0,267,0" Source="./Assets/首尔家的汤饭.png" Stretch="Fill" Opacity="0.7"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Margin="376,0,2,65">
+            <Run FontFamily="隶书" FontSize="20" Foreground="white">首尔家的汤饭火腿芝士炒饭</Run><LineBreak/>
+            <Run FontFamily="隶书" FontSize="10" Foreground="white">月售:20份</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="15" Foreground="yellow">现在正在八折优惠中 !!!(￣▽￣)~*</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="18" Foreground="white">只要</Run> <Run FontFamily="隶书" FontSize="24" Foreground="yellow">￥12 </Run><Run FontFamily="隶书" FontSize="18" Foreground="white">就可以了=￣ω￣=</Run><LineBreak/>
+        </TextBlock>
+        <RepeatButton Width="114" Delay="500" Interval="100" Click="Increase_Click3" Grid.Column="1" Margin="526,148,0,0" Grid.Row="0" Foreground="white">多吃点</RepeatButton>
+        <RepeatButton Width="114" Delay="500" Interval="100" Click="Decrease_Click3" Grid.Column="1" Margin="373,148,0,0" Grid.Row="0" Height="32" Foreground="white">少吃点</RepeatButton>
+        <TextBlock x:Name="clickTextBlock3" Text=" ('▽`)ﾉ :" Grid.Column="1" Margin="378,120,0,28" Grid.Row="0" RenderTransformOrigin="-0.965,-0.562" Foreground="white"/>
+        <Image Grid.Row="1" Grid.Column="1" Margin="0,0,267,0" Source="./Assets/首尔家的汤饭.png" Stretch="Fill" Opacity="0.7"/>
+        <TextBlock Grid.Row="1" Grid.Column="1" Margin="378,0,0,65">
+            <Run FontFamily="隶书" FontSize="20" Foreground="white">首尔家的汤饭火腿芝士炒饭</Run><LineBreak/>
+            <Run FontFamily="隶书" FontSize="10" Foreground="white">月售:20份</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="15" Foreground="yellow">现在正在八折优惠中 !!!(￣▽￣)~*</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="18" Foreground="white">只要</Run> <Run FontFamily="隶书" FontSize="24" Foreground="yellow">￥12 </Run><Run FontFamily="隶书" FontSize="18" Foreground="white">就可以了=￣ω￣=</Run><LineBreak/>
+        </TextBlock>
+        <RepeatButton Width="114" Delay="500" Interval="100" Click="Increase_Click4" Grid.Column="1" Margin="526,148,0,0" Grid.Row="1" Foreground="white">多吃点</RepeatButton>
+        <RepeatButton Width="114" Delay="500" Interval="100" Click="Decrease_Click4" Grid.Column="1" Margin="373,148,0,0" Grid.Row="1" Height="32" Foreground="white">少吃点</RepeatButton>
+        <TextBlock x:Name="clickTextBlock4" Text=" ('▽`)ﾉ :" Grid.Column="1" Margin="378,120,0,28" Grid.Row="1" RenderTransformOrigin="-0.965,-0.562" Foreground="white"/>
+        <Image Grid.Row="2" Grid.Column="1" Margin="0,0,267,0" Source="./Assets/首尔家的汤饭.png" Stretch="Fill" Opacity="0.7"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Margin="378,0,0,65">
+            <Run FontFamily="隶书" FontSize="20" Foreground="white">首尔家的汤饭火腿芝士炒饭</Run><LineBreak/>
+            <Run FontFamily="隶书" FontSize="10" Foreground="white">月售:20份</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="15" Foreground="yellow">现在正在八折优惠中 !!!(￣▽￣)~*</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="18" Foreground="white">只要</Run> <Run FontFamily="隶书" FontSize="24" Foreground="yellow">￥12 </Run><Run FontFamily="隶书" FontSize="18" Foreground="white">就可以了=￣ω￣=</Run><LineBreak/>
+        </TextBlock>
+        <RepeatButton Width="114" Delay="500" Interval="100" Click="Increase_Click5" Grid.Column="1" Margin="526,148,0,0" Grid.Row="2" Foreground="white">多吃点</RepeatButton>
+        <RepeatButton Width="114" Delay="500" Interval="100" Click="Decrease_Click5" Grid.Column="1" Margin="373,148,0,0" Grid.Row="2" Height="32" Foreground="white">少吃点</RepeatButton>
+        <TextBlock x:Name="clickTextBlock5" Text=" ('▽`)ﾉ :" Grid.Column="1" Margin="378,120,0,28" Grid.Row="2" RenderTransformOrigin="-0.965,-0.562" Foreground="white"/>
+        <Image Grid.Row="3" Grid.Column="1" Margin="0,0,267,0" Source="./Assets/首尔家的汤饭.png" Stretch="Fill" Opacity="0.7"/>
+        <TextBlock Grid.Row="3" Grid.Column="1" Margin="378,0,0,65">
+            <Run FontFamily="隶书" FontSize="20" Foreground="white">首尔家的汤饭火腿芝士炒饭</Run><LineBreak/>
+            <Run FontFamily="隶书" FontSize="10" Foreground="white">月售:20份</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="15" Foreground="yellow">现在正在八折优惠中 !!!(￣▽￣)~*</Run><LineBreak/><LineBreak/>
+            <Run FontFamily="隶书" FontSize="18" Foreground="white">只要</Run> <Run FontFamily="隶书" FontSize="24" Foreground="yellow">￥12 </Run><Run FontFamily="隶书" FontSize="18" Foreground="white">就可以了=￣ω￣=</Run><LineBreak/>
+        </TextBlock>
+        <RepeatButton Width="114" Delay="500" Interval="100" Click="Increase_Click6" Grid.Column="1" Margin="526,148,0,0" Grid.Row="3" Foreground="white">多吃点</RepeatButton>
+        <RepeatButton Width="114" Delay="500" Interval="100" Click="Decrease_Click6" Grid.Column="1" Margin="373,148,0,0" Grid.Row="3" Height="32" Foreground="white">少吃点</RepeatButton>
+        <TextBlock x:Name="clickTextBlock6" Text=" ('▽`)ﾉ :" Grid.Column="1" Margin="378,120,0,28" Grid.Row="3" RenderTransformOrigin="-0.965,-0.562" Foreground="white"/>
     </Grid>
 </Page>

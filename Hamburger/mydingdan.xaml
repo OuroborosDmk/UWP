@@ -10,6 +10,13 @@
         <Image Source="/Assets/632203.jpg"></Image>
         <Grid Margin="300,50,300,50">
             <Image Source="/Assets/330521.jpg" Opacity="0.6"></Image>
+            <TextBlock Margin="115,0,117,0">
+                <Run FontFamily="隶书" FontSize="50">订单</Run><LineBreak/>
+                <Run FontFamily="隶书" FontSize="40">这是你订的饭 ヽ(ー_ー)ノ</Run><LineBreak/>
+                <Run FontFamily="隶书" FontSize="30">（点击右侧风铃提交订单</Run><LineBreak/><LineBreak/>
+                 <Run FontFamily="隶书" FontSize="30">亿家好饭台湾大鸡排饭￥14</Run><LineBreak/><LineBreak/>
+            </TextBlock>
+            <TextBlock Margin="115,575,112,0" FontFamily="隶书" FontSize="42">总价为：￥14</TextBlock>
             <Button Width="112" Height="620" Margin="568,0,0,0" Click="Button_Click">
                 <StackPanel Width="95" Height="620">
                 </StackPanel>

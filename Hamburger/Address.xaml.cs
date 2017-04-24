@@ -52,7 +52,10 @@ namespace Hamburger
             {
                 text5.Text = AddAddress.Text;
             }
-
+        }
+            public void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(person));
         }
 
 

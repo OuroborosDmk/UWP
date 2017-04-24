@@ -65,6 +65,7 @@
                 <TextBlock Width="100" Height="100" Margin="10"  Text="☂端午" FontSize="30" TextWrapping="Wrap" Foreground="#FF4B9B39"  SelectionHighlightColor="Green"  />
                 <Rectangle Fill="Red" Width="100" Height="100" Margin="10"/>
                 <Image Source="Assets/Eat/w2.jpg" Width="100" Height="100" Margin="10"/>
+                <Button Grid.Row="4" Width="92" Height="35" Click="Button_Click" Content="返回个人中心" FontSize="12" FontFamily="隶书" Margin="-350,396,0,-311" RenderTransformOrigin="-1.149,-0.165"/>
             </ItemsControl.Items>
         </ItemsControl>
 

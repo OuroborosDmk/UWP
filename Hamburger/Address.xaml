@@ -45,12 +45,12 @@
                            AcceptsReturn="True" Background="#FFDB9191"/>
                 <Button Name="SearchAddressButton"  Background="MistyRose" 
                     FontFamily="Segoe MDL2 Assets" FontSize="36"  
-                    Content="&#xE154;" Click="SearchAddressButton_Click" HorizontalAlignment="Right" Margin="0,16"/>
-
+                    Content="&#xE154;" Click="SearchAddressButton_Click" HorizontalAlignment="Right" Margin="0,16,32,16"/>
+                <Button Grid.Row="4" Width="191" Height="43" Click="Button_Click" Content="返回个人中心" FontSize="25" FontFamily="隶书" Margin="28,-60,0,97"/>
 
             </ItemsControl.Items>
         </ItemsControl>
-        
-        
+
+
     </Grid>
 </Page>
