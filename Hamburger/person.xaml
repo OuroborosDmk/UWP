@@ -23,7 +23,7 @@
             <Grid.ColumnDefinitions>
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Row="0" Margin="0,0,711,0" ><Run FontFamily="隶书" FontSize="50" Foreground="white">这里是个人中心:</Run><LineBreak/> <Run  FontFamily="隶书" FontSize="40" Foreground="white">ヽ(ﾟДﾟ)ﾉ</Run></TextBlock>
+            <TextBlock Grid.Row="0" Margin="0,0,711,0" ><Run FontFamily="隶书" FontSize="45" Foreground="white">ヽ(ﾟДﾟ)ﾉ用户名:</Run><LineBreak/> <Run  FontFamily="隶书" FontSize="45" Foreground="white">User1824044XXXX</Run></TextBlock>
             <Button Name="AddressButton" Click="AddressButton_Click" Width="566" Height="104" Grid.Row="0" Margin="514,0,0,0" Content="我的位置" Foreground="white" FontSize="40" FontFamily="隶书"></Button>
             <Button Name="CollectStore" Click="CollectStore_Click" Width="566" Height="104" Grid.Row="1" Margin="374,0,0,0" Content="我的收藏" Foreground="white" FontSize="40" FontFamily="隶书"></Button>
             <Button Name="Music" Click="Music_Click" Width="566" Height="104" Grid.Row="2" Margin="248,0,0,0" Content="?Music?" Foreground="white" FontSize="40" FontFamily="隶书"></Button>

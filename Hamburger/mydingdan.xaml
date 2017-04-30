@@ -7,8 +7,44 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Grid>
-        <Image Source="/Assets/632203.jpg"></Image>
-        <Grid Margin="300,50,300,50">
+        <Image Source="/Assets/632203.jpg" Stretch="Fill"></Image>
+        <Grid Margin="300,50,300,50" Name="Gridone">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="VisualStateGroup">
+                    <VisualState x:Name="VisualStatePhone">
+                        <VisualState.StateTriggers>
+                            <AdaptiveTrigger MinWindowWidth="0"/>
+                        </VisualState.StateTriggers>
+                        <VisualState.Setters>
+                            <Setter Target="Gridone.margin" Value="0,50,0,50" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="VisualStateTabletwo">
+                        <VisualState.StateTriggers>
+                            <AdaptiveTrigger MinWindowWidth="200" />
+                        </VisualState.StateTriggers>
+                        <VisualState.Setters>
+                            <Setter Target="Gridone.Margin" Value="0,50,0,50" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="VisualStateTabletone">
+                        <VisualState.StateTriggers>
+                            <AdaptiveTrigger MinWindowWidth="400" />
+                        </VisualState.StateTriggers>
+                        <VisualState.Setters>
+                            <Setter Target="Gridone.Margin" Value="0,50,0,50" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="VisualStateTablet">
+                        <VisualState.StateTriggers>
+                            <AdaptiveTrigger MinWindowWidth="600" />
+                        </VisualState.StateTriggers>
+                        <VisualState.Setters>
+                            <Setter Target="Gridone.Margin" Value="300,50,300,50" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
             <Image Source="/Assets/330521.jpg" Opacity="0.6"></Image>
             <TextBlock Margin="115,0,117,0">
                 <Run FontFamily="隶书" FontSize="50">订单</Run><LineBreak/>

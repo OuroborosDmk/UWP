@@ -23,5 +23,17 @@ namespace Hamburger
         {
             this.InitializeComponent();
         }
+        public void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(waimai1));
+        }
+        public void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(waimai1));
+        }
+        public void Button3_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(waimai1));
+        }
     }
 }

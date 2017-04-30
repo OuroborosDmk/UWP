@@ -7,9 +7,45 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Name="ColorGrid">
-        <Image Source="/Assets/513091.jpg"></Image>
-        <Grid>
+    <Grid>
+        <Image Source="/Assets/513091.jpg" Stretch="Fill"></Image>
+        <Grid Name="Gridone">
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="VisualStateGroup">
+                    <VisualState x:Name="VisualStatePhone">
+                        <VisualState.StateTriggers>
+                            <AdaptiveTrigger MinWindowWidth="0"/>
+                        </VisualState.StateTriggers>
+                        <VisualState.Setters>
+                            <Setter Target="Gridone.margin" Value="0,100,0,100" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="VisualStateTabletwo">
+                        <VisualState.StateTriggers>
+                            <AdaptiveTrigger MinWindowWidth="200" />
+                        </VisualState.StateTriggers>
+                        <VisualState.Setters>
+                            <Setter Target="Gridone.Margin" Value="0,100,0,100" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="VisualStateTabletone">
+                        <VisualState.StateTriggers>
+                            <AdaptiveTrigger MinWindowWidth="400" />
+                        </VisualState.StateTriggers>
+                        <VisualState.Setters>
+                            <Setter Target="Gridone.Margin" Value="0,100,0,100" />
+                        </VisualState.Setters>
+                    </VisualState>
+                    <VisualState x:Name="VisualStateTablet">
+                        <VisualState.StateTriggers>
+                            <AdaptiveTrigger MinWindowWidth="600" />
+                        </VisualState.StateTriggers>
+                        <VisualState.Setters>
+                            <Setter Target="Gridone.Margin" Value="0,100,0,100" />
+                        </VisualState.Setters>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
             <Grid.RowDefinitions>
                 <RowDefinition></RowDefinition>
                 <RowDefinition></RowDefinition>
