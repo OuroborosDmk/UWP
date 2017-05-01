@@ -5,8 +5,16 @@
     xmlns:local="using:Hamburger"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:data="using:Hamburger.Models"
     mc:Ignorable="d">
-    <Grid Name="Gridone">
+    <Page.Resources>
+        <Style TargetType="TextBlock" x:Key="TextStyle">
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="FontFamily" Value="隶书" />
+            <Setter Property="FontSize" Value="20" />
+        </Style>
+    </Page.Resources>
+    <Grid>
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:Name="VisualStateGroup">
                 <VisualState x:Name="VisualStatePhone">
@@ -14,7 +22,7 @@
                         <AdaptiveTrigger MinWindowWidth="0"/>
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="Gridone.margin" Value="0,100,0,100" />
+                        <Setter Target="Gridone.margin" Value="0,0,0,0" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="VisualStateTabletwo">
@@ -22,7 +30,7 @@
                         <AdaptiveTrigger MinWindowWidth="200" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="Gridone.Margin" Value="0,100,0,100" />
+                        <Setter Target="Gridone.Margin" Value="0,0,0,0" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="VisualStateTabletone">
@@ -30,7 +38,7 @@
                         <AdaptiveTrigger MinWindowWidth="400" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="Gridone.Margin" Value="0,100,0,100" />
+                        <Setter Target="Gridone.Margin" Value="0,0,0,0" />
                     </VisualState.Setters>
                 </VisualState>
                 <VisualState x:Name="VisualStateTablet">
@@ -38,50 +46,31 @@
                         <AdaptiveTrigger MinWindowWidth="600" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="Gridone.Margin" Value="0,0,0,0" />
+                        <Setter Target="Gridone.Margin" Value="0,0,400,0" />
                     </VisualState.Setters>
                 </VisualState>
             </VisualStateGroup>
         </VisualStateManager.VisualStateGroups>
         <Image Source="/Assets/12036.jpg" Stretch="Fill"></Image>
-        <Grid Margin="100,72,678,404" >
-            <TextBlock Margin="152,0,152,145">
-                <Run FontFamily="隶书" FontSize="50">美食热推</Run><LineBreak/>
-                <Run FontFamily="隶书" FontSize="21">你的口味，我都懂得！</Run>
-            </TextBlock>
-            <Image Source="/Assets/亿家好饭台湾大鸡排饭.png" Stretch="Fill" Margin="362,96,0,36"></Image>
-            <Image Source="/Assets/亿家好饭照烧鸡腿饭.png" Stretch="Fill" Margin="180,96,170,36"></Image>
-            <Image Source="/Assets/亿家好饭招牌干妈茄子饭.png" Stretch="Fill" Margin="0,96,350,36"></Image>
-            <Button Name="Button1" Click="Button1_Click" Margin="180,208,0,0" Width="152" Height="36" Content="照烧鸡腿饭" FontFamily="隶书" FontSize="21"></Button>
-            <Button Name="Button2" Click="Button2_Click" Margin="362,208,0,0" Width="140" Height="36" Content="台湾大鸡排饭" FontFamily="隶书" FontSize="21"></Button>
-            <Button Name="Button3" Click="Button3_Click" Margin="0,208,0,0" Width="152" Height="36" Content="干妈茄子饭" FontFamily="隶书" FontSize="21"></Button>
-        </Grid>
-        <Grid Margin="712,72,232,404" >
-            <TextBlock Margin="66,0,66,167">
-                <Run FontFamily="隶书" FontSize="40">大家都在吃</Run><LineBreak/>
-                <Run FontFamily="隶书" FontSize="21">总有美味在身边！！！</Run>
-            </TextBlock>
-            <Image Source="/Assets/亿家好饭台湾大鸡排饭.png" Stretch="Fill" Margin="186,108,0,36" RenderTransformOrigin="0.5,0.5">
-                <Image.RenderTransform>
-                    <CompositeTransform ScaleX="1"/>
-                </Image.RenderTransform>
-            </Image>
-            <Image Source="/Assets/亿家好饭照烧鸡腿饭.png" Stretch="Fill" Margin="3,104,182,36"></Image>
-            <Button Name="Button7" Click="Button1_Click" Margin="0,208,0,0" Width="154" Height="36" Content="照烧鸡腿饭" FontFamily="隶书" FontSize="21"></Button>
-            <Button Name="Button8" Click="Button2_Click" Margin="185,208,0,0" Width="151" Height="36" Content="台湾大鸡排饭" FontFamily="隶书" FontSize="21"></Button>
-        </Grid>
-        <Grid Margin="100,396,678,68" >
-            <TextBlock Margin="152,0,152,145">
-                <Run FontFamily="隶书" FontSize="50">天天特价</Run><LineBreak/>
-                <Run FontFamily="隶书" FontSize="21">特价商品，一网打尽！</Run>
-            </TextBlock>
-            <Image Source="/Assets/亿家好饭台湾大鸡排饭.png" Stretch="Fill" Margin="362,96,0,36"></Image>
-            <Image Source="/Assets/亿家好饭照烧鸡腿饭.png" Stretch="Fill" Margin="180,96,170,36"></Image>
-            <Image Source="/Assets/亿家好饭招牌干妈茄子饭.png" Stretch="Fill" Margin="0,96,350,36"></Image>
-            <Button Name="Button4" Click="Button1_Click" Margin="180,208,0,0" Width="152" Height="36" Content="照烧鸡腿饭" FontFamily="隶书" FontSize="21"></Button>
-            <Button Name="Button5" Click="Button2_Click" Margin="362,208,0,0" Width="140" Height="36" Content="台湾大鸡排饭" FontFamily="隶书" FontSize="21"></Button>
-            <Button Name="Button6" Click="Button3_Click" Margin="0,208,0,0" Width="152" Height="36" Content="干妈茄子饭" FontFamily="隶书" FontSize="21"></Button>
-        </Grid>
+        <Grid Name="Gridone" >
+            <GridView ItemsSource="{x:Bind Foods}" IsItemClickEnabled="True" ItemClick="Grid_ItemClick">
+                <GridView.ItemTemplate>
+                    <DataTemplate x:DataType="data:FoodItem">
+                        <StackPanel Height="195" Width="378">
+                            <Ellipse Width="150" Height="150">
+                                <Ellipse.Fill>
+                                    <ImageBrush ImageSource="{x:Bind FoodImage}"/>
+                                </Ellipse.Fill>
+                            </Ellipse>
+                            <TextBlock Text="{x:Bind Merchants}"  Style="{StaticResource TextStyle}" ></TextBlock>
+                            <TextBlock Text="{x:Bind Name}"  Style="{StaticResource TextStyle}" ></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+                
+            </Grid>
+            
     </Grid>
 
 

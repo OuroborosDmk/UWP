@@ -101,7 +101,7 @@
     <Compile Include="CollectStore.xaml.cs">
       <DependentUpon>CollectStore.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Models\NewsItem.cs" />
+    <Compile Include="Models\FoodItem.cs" />
     <Compile Include="Music.xaml.cs">
       <DependentUpon>Music.xaml</DependentUpon>
     </Compile>
@@ -191,8 +191,10 @@
     <Content Include="Assets\琦健快餐鸡排饭.png" />
     <Content Include="Assets\琦健快餐鸡柳饭.png" />
     <Content Include="Assets\美味小厨照烧鸡腿饭.png" />
+    <Content Include="Assets\美味小厨红油杏鲍菇.png" />
     <Content Include="Assets\首尔家的汤饭.png" />
     <Content Include="Assets\首尔家的汤饭牛肉盖饭.png" />
+    <Content Include="Assets\首尔家的汤饭辣炒米条.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

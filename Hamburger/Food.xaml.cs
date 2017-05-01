@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Hamburger.Models;
 
 // “空白页”项模板在 http://go.microsoft.com/fwlink/?LinkId=234238 上有介绍
 
@@ -19,21 +20,17 @@ namespace Hamburger
 {
     public sealed partial class Food : Page
     {
+        private List<FoodItem> Foods;
+
         public Food()
         {
             this.InitializeComponent();
+            Foods = FoodManager.GetFoods();
         }
-        public void Button1_Click(object sender, RoutedEventArgs e)
+
+        private void Grid_ItemClick(object sender ,ItemClickEventArgs e)
         {
-            Frame.Navigate(typeof(waimai1));
-        }
-        public void Button2_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(waimai1));
-        }
-        public void Button3_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(waimai1));
+            Frame.Navigate(typeof(Financial));
         }
     }
 }
